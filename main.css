@@ -1,0 +1,77 @@
+a,li {
+	color :inherit;
+}
+.box-shadow-top {
+	margin-top: 50px;
+	border: 1px solid white;
+box-shadow: 0px -1px 31px -4px rgba(154,154,154,1);
+}
+.box-shadow-bottom {
+	border: 1px solid white;
+	box-shadow: -1px 14px 62px -10px rgba(154,154,154,1);
+
+}
+.icon-bar {
+		background: green !importanat;
+	}
+.logo {
+	width: 86px;
+	height: 36px;
+	
+} 
+.font--size-16 {
+	font-size: 16px;
+	opacity: 0.6;
+	
+}
+.font--size-18 {
+	font-size: 18px;
+	
+}
+.font--size-20 {
+	font-size: 20px;
+	
+}
+.font--size-30{
+	font-size: 30px;
+	
+}
+.font--size-14 {
+	font-size: 14px;
+	
+}
+.font--size-36 {
+	font-size: 36px;
+	
+}
+.line--height-18{
+	line-height: 18px;
+}
+.line--height-40{
+	line-height: 40px;
+}
+.line--height-35{
+	line-height: 35px;
+}
+.line--height-28{
+	line-height: 28px;
+}
+.line--height-24 {
+	line-height: 24px;
+}
+.padding--right-10{
+	padding-right: 10px;
+}
+.text--color-origin{
+	color: #2e2e2e;
+}
+.text--color-blue{
+	color: #166cc1;
+}
+
+}
+.vertical-line{
+	display: inline-block;
+	width:10px;
+	border-left: 1px solid #2e2e2e;
+}
