@@ -4,6 +4,10 @@ a,li {
 ul {
 	list-style-type:none;
 }
+
+.container {
+	margin-top: 25px;
+}
 .box-shadow-top {
 	margin-top: 50px;
 	border: 1px solid white;
