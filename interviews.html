@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+<div class="container">
+  <p class="font--size-20"><b><span class="border-bottom padding--bottom-7">M.Sc</span>/PhD Interviews</b></p><br>
+  <p >Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+  <div class="container-fluid text-right">
+    <div class="row">
+	<script>
+	$(function(){ /* to make sure the script runs after page load */
+
+	$('.readmore-btn').each(function(event){ /* select all divs with the item class */
+	
+		var max_length = 150; /* set the max content length before a read more link will be added */
+		
+		if($(this).html().length > max_length){ /* check for content length */
+			
+			var short_content 	= $(this).html().substr(0,max_length); /* split the content in two parts */
+			var long_content	= $(this).html().substr(max_length);
+			
+			$(this).html(short_content+
+						 '<a href="#" class="read_more"><br/>Read More</a>'+
+						 '<span class="more_text" style="display:none;">'+long_content+'</span>'); /* Alter the html to allow the read more functionality */
+						 
+			$(this).find('a.read_more').click(function(event){ /* find the a.read_more element within the new html and bind the following code to it */
+ 
+				event.preventDefault(); /* prevent the a from changing the url */
+				$(this).hide(); /* hide the read more button */
+				$(this).parents('.readmore-btn').find('.more_text').show(); /* show the .more_text span */
+		 
+			});
+			
+		}
+		
+	});
+ 
+ 
+});
+
+	</script>
+      <div class="col-sm-4">
+        <div class="panel panel-default text-left">
+           <div class="panel-body box-shadow-bottom chronicles-card">
+            <p class="font--size-18"><b> Name</b><br>
+               <span class="text--color-grey font--size-14"> Branch- Batch</span></p>
+            <p>phd in- <br>
+            university</p>
+                         <p class="readmore-btn"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+						<br> <a href="#" class="text--color-grey">DOWNLOAD	</a>	
+          </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="panel panel-default text-left">
+            <div class="panel-body box-shadow-bottom chronicles-card">
+            <p class="font--size-18"><b> Name</b><br>
+               <span class="text--color-grey font--size-14"> Branch- Batch</span></p>
+            <p>phd in- <br>
+            university</p>
+                         <p class="readmore-btn"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+						<br> <a href="#" class="text--color-grey">DOWNLOAD	</a>	
+          </div>
+          </div>
+        </div>
+     <div class="col-sm-4">
+       <div class="panel panel-default text-left">
+          <div class="panel-body box-shadow-bottom chronicles-card">
+            <p class="font--size-18"><b> Name</b><br>
+               <span class="text--color-grey font--size-14"> Branch- Batch</span></p>
+            <p>phd in- <br>
+            university</p>
+                         <p class="readmore-btn"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+						<br> <a href="#" class="text--color-grey">DOWNLOAD	</a>	
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel panel-default text-left">
+          <div class="panel-body box-shadow-bottom chronicles-card">
+            <p class="font--size-18"><b> Name</b><br>
+               <span class="text--color-grey font--size-14"> Branch- Batch</span></p>
+            <p>phd in- <br>
+            university</p>
+                         <p class="readmore-btn"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+						<br> <a href="#" class="text--color-grey">DOWNLOAD	</a>	
+          </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="panel panel-default text-left">
+<div class="panel-body box-shadow-bottom chronicles-card">
+            <p class="font--size-18"><b> Name</b><br>
+               <span class="text--color-grey font--size-14"> Branch- Batch</span></p>
+            <p>phd in- <br>
+            university</p>
+                         <p class="readmore-btn"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+						<br> <a href="#" class="text--color-grey">DOWNLOAD	</a>	
+          </div>
+          </div>
+        </div>
+     <div class="col-sm-4">
+       <div class="panel panel-default text-left">
+          <div class="panel-body box-shadow-bottom chronicles-card">
+            <p class="font--size-18"><b> Name</b><br>
+               <span class="text--color-grey font--size-14"> Branch- Batch</span></p>
+            <p>phd in- <br>
+            university</p>
+                         <p class="readmore-btn"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+						<br> <a href="#" class="text--color-grey">DOWNLOAD	</a>	
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel panel-default text-left">
+           <div class="panel-body box-shadow-bottom chronicles-card">
+            <p class="font--size-18"><b> Name</b><br>
+               <span class="text--color-grey font--size-14"> Branch- Batch</span></p>
+            <p>phd in- <br>
+            university</p>
+                         <p class="readmore-btn"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+						<br> <a href="#" class="text--color-grey">DOWNLOAD	</a>	
+          </div>
+         </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="panel panel-default text-left">
+            <div class="panel-body box-shadow-bottom chronicles-card">
+            <p class="font--size-18"><b> Name</b><br>
+               <span class="text--color-grey font--size-14"> Branch- Batch</span></p>
+            <p>phd in- <br>
+            university</p>
+                         <p class="readmore-btn"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+						<br> <a href="#" class="text--color-grey">DOWNLOAD	</a>	
+          </div>
+          </div>
+        </div>
+     <div class="col-sm-4">
+       <div class="panel panel-default text-left">
+          <div class="panel-body box-shadow-bottom chronicles-card">
+            <p class="font--size-18"><b> Name</b><br>
+               <span class="text--color-grey font--size-14"> Branch- Batch</span></p>
+            <p>phd in- <br>
+            university</p>
+                         <p class="readmore-btn"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+						<br> <a href="#" class="text--color-grey">DOWNLOAD	</a>	
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">&raquo;</a>
+  </div>
+
+</div>
+
+</body>
+</html>
