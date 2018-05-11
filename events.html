@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+<div class="container text-right">
+  <div class="row text-left">
+    <div class="col-lg-3 border-right">
+
+      <ul>
+        <li class="font--size-20"><b>EVENTS</b></li>
+        <li><a href="#">Recent </a></li>
+        <li><a href="#">Upcoming </a></li>
+        <li><a href="#">+ Add Event </a></li>
+      </ul>
+
+      <ul id="myBtnContainer">
+        <li class="font--size-20"><b>FILTER</b></li>
+        <li>
+          <div class="checkbox" onclick="filterSelection('meet')">
+            <label><input type="checkbox" value="">Option 1</label>
+          </div>
+        </li>
+        <li>
+          <div class="checkbox" onclick="filterSelection('session')">
+            <label><input type="checkbox" value="">Option 1</label>
+          </div>
+        </li>
+        <li>
+          <div class="checkbox" onclick="filterSelection('reunion')">
+            <label><input type="checkbox" value="">Option 1</label>
+          </div>
+        </li>
+        <li>
+          <div class="checkbox" onclick="filterSelection('activities')">
+            <label><input type="checkbox" value="">Option 1</label>
+          </div>
+        </li>
+      </ul>
+
+      <ul>
+        <li class="font--size-20"><b>Date</b></li>
+        <li><div class="container">
+    <div class="row">
+        <div class='col-sm-2'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+    </div>
+</div></li>
+        <li>
+          <div class="container">
+            <div class="row">
+              <div class='col-sm-2'>
+                <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $('.input-group.date').datepicker({format: "dd.mm.yyyy"});
+        </script>
+      </div>
+        </div>
+        </li>
+      </ul>
+
+    </div>
+    <div class="col-lg-9">
+      <div class="row">
+  <div class="col-sm-6 filterDiv reunion">
+    <div class="thumbnail">
+      <a href="/w3images/nature.jpg">
+        <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Lorem ipsum...</p>
+        </div>
+      </a>
+    </div>
+    <a href="#" class="font--size-14"><b>View&raquo;</b></a>
+    <hr>
+  </div>
+
+  <div class="col-sm-6 filterDiv reunion">
+    <div class="thumbnail">
+      <a href="/w3images/nature.jpg">
+        <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Lorem ipsum...</p>
+        </div>
+      </a>
+    </div>
+    <a href="#" class="font--size-14"><b>View&raquo;</b></a>
+    <hr>
+  </div>
+
+  <div class="col-sm-6 filterDiv session">
+    <div class="thumbnail">
+      <a href="/w3images/nature.jpg">
+        <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Lorem ipsum...</p>
+        </div>
+      </a>
+    </div>
+    <a href="#" class="font-size-14"><b>View&raquo;</b></a>
+    <hr>
+  </div>
+
+  <div class="col-sm-6 filterDiv reunion">
+    <div class="thumbnail">
+      <a href="/w3images/nature.jpg">
+        <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Lorem ipsum...</p>
+        </div>
+      </a>
+    </div>
+    <a href="#" class="font--size-14"><b>View&raquo;</b></a>
+    <hr>
+  </div>
+
+  <div class="col-sm-6 filterDiv session">
+    <div class="thumbnail">
+      <a href="/w3images/nature.jpg">
+        <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Lorem ipsum...</p>
+        </div>
+      </a>
+    </div>
+    <a href="#" class="font--size-14"><b>View&raquo;</b></a>
+    <hr>
+  </div>
+
+  <div class="col-sm-6 filterDiv meet">
+    <div class="thumbnail">
+      <a href="/w3images/nature.jpg">
+        <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Lorem ipsum...</p>
+        </div>
+      </a>
+    </div>
+    <a href="#" class="font--size-14"><b>View&raquo;</b></a>
+    <hr>
+  </div>
+
+  <div class="col-sm-6 filterDiv meet">
+    <div class="thumbnail">
+      <a href="/w3images/nature.jpg">
+        <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Lorem ipsum...</p>
+        </div>
+      </a>
+    </div>
+    <a href="#" class="font--size-14"><b>View&raquo;</b></a>
+    <hr>
+  </div>
+
+  <div class="col-sm-6 activities">
+    <div class="thumbnail">
+      <a href="/w3images/fjords.jpg">
+        <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <p>Lorem ipsum...</p>
+        </div>
+      </a>
+    </div>
+    <a href="#" class="font--size-14"><b>View&raquo;</b></a>
+    <hr>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">&raquo;</a>
+  </div>
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
